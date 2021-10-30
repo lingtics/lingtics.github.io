@@ -1,20 +1,10 @@
 //
 // work.scss
 //
-.filter-box {
-    display: none;
-    &.show {
-        display: block;
-    }
-}
 
-.tobii-zoom {
-    display: block !important;
-}
-
-.tobii-zoom__icon {
-    display: none;
-}
+/*********************************/
+/*         Works & Portfolios    */
+/*===============================*/
 
 .work-container {
     &.work-classic {
@@ -353,7 +343,7 @@
     .qty-btn {
         pointer-events: none; 
         width: 65px;
-        padding-left: 12px;
+        padding-left: 15px;
     }
 }
 
@@ -462,4 +452,25 @@
             }
         }
     }
+}
+
+
+//Tobii Lighbox
+.tobii__btn svg {
+    height: 30px;
+    width: auto;
+}
+.tobii__counter {
+    font-size: 16px;
+}
+.tobii-zoom {
+    display: block !important;
+}
+
+.tobii-zoom__icon {
+    display: none;
+}
+
+#grid {
+    padding: 0 !important;
 }

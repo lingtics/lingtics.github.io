@@ -1,6 +1,11 @@
 //
 // menu.scss
 //
+
+/*********************************/
+/*     Menu-DARK                 */
+/*===============================*/
+
 #topnav {
     .logo {
         color: $dark !important;
@@ -38,6 +43,15 @@
         > li {
             > a {
                 color: $dark;
+            }
+            .submenu {
+                &.megamenu {
+                    li {
+                        .megamenu-head {
+                            color: $dark !important;
+                        }
+                    }
+                }
             }
         }
         .has-submenu {

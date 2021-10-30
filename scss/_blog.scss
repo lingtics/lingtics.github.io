@@ -1,6 +1,11 @@
 //
 // blog.scss
 //
+
+/*********************************/
+/*         Blog & News           */
+/*===============================*/
+
 .blog {
     transition: all 0.3s ease;
     .content {
@@ -34,6 +39,9 @@
                 }
             }
         }
+        .link {
+            color: $primary !important;
+        }
     }
     .author,
     .teacher,
@@ -64,6 +72,9 @@
         &:hover {
             transform: translateY(0px) !important;
         }
+    }
+    .overlay {
+        background: $dark;
     }
     &:hover {
         transform: translateY(-10px);
@@ -129,23 +140,23 @@
                 }
             }
         }
-        .tagcloud {
-            > a {
-                background: $gray-200;
-                color: $dark;
-                display: inline-block;
-                font-size: 9px;
-                letter-spacing: 1px;
-                margin: 5px 10px 5px 0;
-                padding: 8px 12px 7px;
-                text-transform: uppercase;
-                transition: all 0.5s ease;
-                font-weight: 600;
-                &:hover {
-                    background: $primary;
-                    color: $white;
-                }
-            }
+    }
+}
+.tagcloud {
+    > a {
+        background: $gray-200;
+        color: $dark;
+        display: inline-block;
+        font-size: 9px;
+        letter-spacing: 1px;
+        margin: 5px 10px 5px 0;
+        padding: 8px 12px 7px;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+        font-weight: 600;
+        &:hover {
+            background: $primary;
+            color: $white;
         }
     }
 }
@@ -244,7 +255,7 @@
     }
 }
 
-//page-job-candindate.html, page-job-company.html
+//page-job-candindate.html, job-company.html
 @media (min-width: 1024px) {
     .job-profile {
         top: -378px;

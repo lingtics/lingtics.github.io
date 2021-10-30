@@ -1,6 +1,11 @@
 //
 // cta.scss
 //
+
+/*********************************/
+/*         CTA                   */
+/*===============================*/
+
 //cta
 .bg-cta {
     padding: 150px 0;
@@ -34,5 +39,12 @@
             -webkit-text-stroke: 2px $primary;
             -webkit-text-fill-color: $primary;
         }
+    }
+}
+
+//Video popup
+@media (max-width: 767px){
+    iframe {
+        width: auto !important;
     }
 }

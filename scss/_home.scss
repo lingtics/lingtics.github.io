@@ -2,6 +2,10 @@
 // home.scss
 //
 
+/*********************************/
+/*         Home & Hero           */
+/*===============================*/
+
 @mixin home-common {
     background-size: cover;
     align-self: center;
@@ -12,6 +16,13 @@
     height: 100vh;    
     @include home-common();
 }
+.bg-home-75vh {
+    height: 75vh !important;    
+    @include home-common();
+    @media (max-width: 767px) {
+        height: 80vh !important;
+    }
+}
 .bg-half-260 {
     padding: 260px 0;    
     @include home-common();
@@ -21,7 +32,11 @@
     @include home-common();
 }
 .bg-half {
-    padding: 184px 0 90px;
+    padding: 200px 0 100px;
+
+    @media (max-width: 768px) {
+        padding: 160px 0 60px;
+    }
     @include home-common();
 }
 
@@ -34,26 +49,24 @@
 .bg-circle-gradiant {
     background: radial-gradient(circle at 50% 50%, rgba($primary, 0.1) 0%, 
                                                    rgba($primary, 0.1) 33.333%,
-                                                   rgba($primary, 0.3) 33.333%, 
-                                                   rgba($primary, 0.3) 66.666%,
-                                                   rgba($primary, 0.5) 66.666%, 
-                                                   rgba($primary, 0.5) 99.999%);
+                                                   rgba($primary, 0.2) 33.333%, 
+                                                   rgba($primary, 0.2) 66.666%,
+                                                   rgba($primary, 0.3) 66.666%, 
+                                                   rgba($primary, 0.3) 99.999%);
 }
 
 //It Solutions
 .it-home {
-    animation: animate-left-to-right 60s linear infinite;
+    animation: slideleft 20000s infinite linear;
 }
-
-@keyframes animate-left-to-right { 
-    from { 
-        background-position: 0 0; 
-    } 
-    to { 
-        background-position: 100% 0; 
-    } 
+@keyframes slideleft {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 90000%;
+    }
 }
-
 //Saas
 .home-dashboard {
     img {
@@ -188,6 +201,30 @@
     .carousel-control-next-icon,
     .carousel-control-prev-icon {
         width: 30%;
+    }
+
+    .carousel-control-next {
+        right: 8px;
+    }
+
+    .carousel-control-prev {
+        left: 8px;
+    }
+}
+
+.carousel-indicators {
+    [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 3px;
+        transition: all 0.5s ease;
+        border: 0;
+        background: $primary !important;
+        margin: auto 4px;
+    }
+    .active {
+        background-color: $primary !important;
+        transform: rotate(45deg);
     }
 }
 
@@ -357,12 +394,6 @@
             background: $white none repeat scroll 0 0;
             z-index: 2;
         }
-    }
-}
-
-@media (max-width: 768px) {
-    .bg-half {
-        padding: 169px 0 50px;
     }
 }
 
