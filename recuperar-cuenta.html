@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Lingtics | Tecnologías lingüísticas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Servicios tecnológicos basados en inteligencia artificial para el procesamiento del lenguaje natural." />
+        <meta name="keywords" content="analisis, lenguaje, inteligencia artificial, NLP, linguistica computacional" />
+        <meta name="author" content="Lingtics" />
+        <meta name="email" content="contact@lingtics.com" />
+        <meta name="website" content="https://lingtics.com" />
+        <meta name="version" content="v2.2.0" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.png">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Main Css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader -->
+
+        <div class="back-to-home rounded d-none d-sm-block">
+            <a href="index.html" class="btn btn-icon btn-primary"><i data-feather="home" class="icons"></i></a>
+        </div>
+        
+        <!-- Hero Start -->
+        <section class="bg-home bg-circle-gradiant d-flex align-items-center">
+            <div class="bg-overlay bg-overlay-white"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 col-md-8"> 
+                        <div class="card shadow rounded border-0">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Recuperación de cuenta</h4>  
+
+                                <form class="login-form mt-4">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p class="text-muted">Introduzca la dirección de correo electrónico con la que inicia sesión en <span class="text-primary fw-bold">Lingtics</span>. Recibirá un enlace por este medio para crear una nueva contraseña.</p>
+                                            <div class="mb-3">
+                                                <label class="form-label">Correo electrónico <span class="text-danger">*</span></label>
+                                                <div class="form-icon position-relative">
+                                                    <i data-feather="mail" class="fea icon-sm icons"></i>
+                                                    <input type="email" class="form-control ps-5" placeholder="Ingrese su correo electrónico" name="email" required="">
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
+                                        <div class="col-lg-12">
+                                            <div class="d-grid">
+                                                <!--<button class="btn btn-primary">Recuperar cuenta</button> -->
+
+                                                <!-- Modal Start -->
+                                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#login" class="btn btn-primary">Recuperar cuenta</a>
+
+                                                <!-- Popup Start -->
+                                                <div class="modal fade" id="login" tabindex="-1" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content rounded shadow border-0">
+                                                            <div class="modal-body py-5">
+                                                                <div class="text-center">
+                                                                    <div class="icon d-flex align-items-center justify-content-center bg-soft-danger rounded-circle mx-auto" style="height: 95px; width:95px;">
+                                                                        <h1 class="mb-0"><i class="uil uil-heart-break align-middle"></i></h1>
+                                                                    </div>
+                                                                    <div class="mt-4">
+                                                                        <h4>Esta cuenta no se encuentra activa en nuestra plataforma.</h4>
+                                                                        <p class="text-muted">Solicite la creación de una cuenta y empiece a disfrutar de todos los servicios que <span class="text-primary fw-bold">Lingtics</span> puede ofrecerle.</p>
+                                                                        <div class="mt-4">
+                                                                            <a href="contacto.html" class="btn btn-outline-primary">Solicitar cuenta</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Popup End -->
+                                                <!-- Modal End -->
+                                            </div>
+
+                                            <!-- Wishlist Popup Start -->
+                                            <div class="modal fade" id="empty-cart" tabindex="-1" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content rounded shadow border-0">
+                                                        <div class="modal-body py-5">
+                                                            <div class="text-center">
+                                                                <img src="images/shop/cart.png" class="avatar avatar-medium rounded-circle shadow" alt="">
+                                                                <div class="mt-4">
+                                                                    <h4>Your cart is empty.</h4>
+                                                                    <p class="text-muted">Looks like you haven't made your choice yet...</p>
+                                                                    <div class="mt-4">
+                                                                        <a href="javascript:void(0)" class="btn btn-primary">Start Shopping</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Wishlist Popup End -->
+                                        </div><!--end col-->
+                                        <div class="mx-auto">
+                                            <p class="mb-0 mt-3"><small class="text-dark me-2">Si recuerda su contraseña, <a href="login.html" class="text-dark fw-bold">Ingrese a su cuenta aquí.</a></small></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Style switcher -->
+        <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
+            <div>
+                <h6 class="title text-center">Select Your Color</h6>
+                <ul class="pattern">
+                    <li class="list-inline-item">
+                        <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color2" href="javascript: void(0);" onclick="setColor('green')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color3" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color4" href="javascript: void(0);" onclick="setColor('red')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color5" href="javascript: void(0);" onclick="setColor('skyblue')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color6" href="javascript: void(0);" onclick="setColor('skobleoff')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color7" href="javascript: void(0);" onclick="setColor('cyan')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color8" href="javascript: void(0);" onclick="setColor('slateblue')"></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="color9" href="javascript: void(0);" onclick="setColor('yellow')"></a>
+                    </li>
+                </ul>
+
+                <h6 class="title text-center pt-3 mb-0 border-top">Opciones de tema</h6>
+                <ul class="text-center list-unstyled">
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary rtl-version t-rtl-light mt-2" onclick="setTheme('style-rtl')">Derecha</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary ltr-version t-ltr-light mt-2" onclick="setTheme('style')">Izquierda</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-rtl-version t-rtl-dark mt-2" onclick="setTheme('style-dark-rtl')">Derecha</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-ltr-version t-ltr-dark mt-2" onclick="setTheme('style-dark')">Izquierda</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark dark-version t-dark mt-2" onclick="setTheme('style-dark')">Oscuro</a></li>
+                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark light-version t-light mt-2" onclick="setTheme('style')">Claro</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <a href="javascript: void(0);" class="settings bg-white title-bg-dark shadow d-block"><i class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
+            </div>
+        </div>
+        <!-- end Style switcher -->
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <!-- Switcher -->
+        <script src="js/switcher.js"></script>
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    </body>
+</html>
