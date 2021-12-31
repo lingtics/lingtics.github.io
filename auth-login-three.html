@@ -1,19 +1,19 @@
 
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
     <head>
         <meta charset="utf-8" />
         <title>Lingtics | Tecnologías lingüísticas</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
-        <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern" />
-        <meta name="author" content="Shreethemes" />
-        <meta name="email" content="support@shreethemes.in" />
-        <meta name="website" content="https://shreethemes.in" />
-        <meta name="version" content="v3.8.0" />
+        <meta name="description" content="Servicios tecnológicos basados en inteligencia artificial para el procesamiento del lenguaje natural." />
+        <meta name="keywords" content="analisis, lenguaje, inteligencia artificial, NLP, linguistica computacional" />
+        <meta name="author" content="Lingtics" />
+        <meta name="email" content="contact@lingtics.com" />
+        <meta name="website" content="https://lingtics.com" />
+        <meta name="version" content="v2.2.0" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="shortcut icon" href="images/favicon.png">
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- Icons -->
@@ -35,37 +35,77 @@
             </div>
         </div> -->
         <!-- Loader -->
-        
-        <div class="back-to-home rounded d-none d-sm-block">
-            <a href="index.html" class="btn btn-icon btn-soft-primary"><i data-feather="home" class="icons"></i></a>
-        </div>
 
-        <!-- ERROR PAGE -->
-        <section class="bg-home d-flex align-items-center">
+        <div class="back-to-home rounded d-none d-sm-block">
+            <a href="index.html" class="btn btn-icon btn-primary"><i data-feather="home" class="icons"></i></a>
+        </div>
+        
+        <!-- Hero Start -->
+        <section class="bg-home bg-circle-gradiant d-flex align-items-center">
+            <div class="bg-overlay bg-overlay-white"></div>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 col-md-12 text-center">
-                        <img src="images/404.svg" class="img-fluid" alt="">
-                        <div class="text-uppercase mt-4 display-3">Lo sentimos</div>  <!-- class="text-uppercase mt-4 display-3" -->
-                        <div class="text-capitalize text-dark mb-4 error-page">Página web no encontrada</div>  <!-- class="text-capitalize text-dark mb-4 error-page" -->
-                        <p class="text-muted para-desc mx-auto">Este enlace parece estar <span class="text-primary fw-bold">roto</span> o haberse <span class="text-primary fw-bold">movido</span> a otro sitio.</p>
-                    </div><!--end col-->
-                </div><!--end row-->
+                    <div class="col-lg-5 col-md-8"> 
+                        <div class="card login-page bg-white shadow rounded border-0">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Inicio de sesión</h4>  
+                                <form class="login-form mt-4">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Correo electrónico <span class="text-danger">*</span></label>
+                                                <div class="form-icon position-relative">
+                                                    <i data-feather="user" class="fea icon-sm icons"></i>
+                                                    <input type="email" class="form-control ps-5" placeholder="Ingrese su correo electrónico" name="email" required="">
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
 
-                <div class="row">
-                    <div class="col-md-12 text-center">  
-                        <a href="index.html" class="btn btn-outline-primary mt-4">Regresar</a>
-                        <a href="index.html" class="btn btn-primary mt-4 ms-2">Ir al inicio</a>
+                                        <div class="col-lg-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Contraseña <span class="text-danger">*</span></label>
+                                                <div class="form-icon position-relative">
+                                                    <i data-feather="key" class="fea icon-sm icons"></i>
+                                                    <input type="password" class="form-control ps-5" placeholder="Ingrese su contraseña" required="">
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->
+
+                                        <div class="col-lg-12">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="mb-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">Recordar mis datos</label>
+                                                    </div>
+                                                </div>
+                                                <p class="forgot-pass mb-0"><a href="auth-re-password-three.html" class="text-dark fw-bold">¿Olvidó su contraseña?</a></p>
+                                            </div>
+                                        </div><!--end col-->
+
+                                        <div class="col-lg-12 mb-0">
+                                            <div class="d-grid">
+                                                <button class="btn btn-primary">Ingresar</button>
+                                            </div>
+                                        </div><!--end col-->
+
+                                        <div class="col-12 text-center">
+                                            <p class="mb-0 mt-3"><small class="text-dark me-2">Si aún no tiene una cuenta, <a href="auth-signup-three.html" class="text-dark fw-bold">solicitela aquí.</a></small></p>
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+                                </form>
+                            </div>
+                        </div><!---->
                     </div><!--end col-->
                 </div><!--end row-->
-            </div><!--end container-->
+            </div> <!--end container-->
         </section><!--end section-->
-        <!-- ERROR PAGE -->
+        <!-- Hero End -->
 
         <!-- Style switcher -->
         <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
             <div>
-                <h6 class="title text-center">Modifique el color</h6>
+                <h6 class="title text-center">Select Your Color</h6>
                 <ul class="pattern">
                     <li class="list-inline-item">
                         <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
@@ -104,11 +144,6 @@
                     <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-ltr-version t-ltr-dark mt-2" onclick="setTheme('style-dark')">Izquierda</a></li>
                     <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark dark-version t-dark mt-2" onclick="setTheme('style-dark')">Oscuro</a></li>
                     <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark light-version t-light mt-2" onclick="setTheme('style')">Claro</a></li>
-                </ul>
-
-                <h6 class="title text-center pt-3 mb-0 border-top">Admin</h6>
-                <ul class="text-center list-unstyled mb-0">
-                    <li><a href="javascript:void(0)" target="_blank" class="btn btn-sm btn-block btn-success mt-2">Admin Dashboard</a></li>
                 </ul>
             </div>
             <div class="bottom">
